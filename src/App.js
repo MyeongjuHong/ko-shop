@@ -6,13 +6,18 @@ import Cart from "./pages/Cart";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="" exact={true} element={<Home />} />
-        <Route path="/goods" exact={true} element={<Goods />} />
-        <Route path="/cart" exact={true} element={<Cart />} />
-      </Routes>
-    </Router>
+    <BrowserRouter basename="/ko-shop">
+      <Link to="/" />
+      <Link to="/goods" />
+      <Link to="/cart" />
+      <Router>
+        <Routes>
+          <Route path="" exact={true} element={<Home />} />
+          <Route path="/goods" exact={true} element={<Goods />} />
+          <Route path="/cart" exact={true} element={<Cart />} />
+        </Routes>
+      </Router>
+    </BrowserRouter>
   );
 }
 
