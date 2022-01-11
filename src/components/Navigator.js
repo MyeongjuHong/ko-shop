@@ -6,7 +6,7 @@ function Navigator() {
     <div>
       <ul>
         <li>
-          <Link to="/">home</Link>
+          <Link to="/home">home</Link>
         </li>
         <li>
           <Link to="/goods">goods</Link>

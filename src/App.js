@@ -8,9 +8,9 @@ import Navigator from "./components/Navigator";
 function App() {
   return (
     <Router>
-      <Navigator />
+      {/* <Navigator /> */}
       <Routes>
-        <Route path="" exact={true} element={<Home />} />
+        <Route path="/home" exact={true} element={<Home />} />
         <Route path="/goods" exact={true} element={<Goods />} />
         <Route path="/cart" exact={true} element={<Cart />} />
       </Routes>
